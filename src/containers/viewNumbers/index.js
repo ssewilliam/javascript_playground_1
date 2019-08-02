@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Table, Navbar, Container, Nav, Image } from 'react-bootstrap';
-import image from '../assets/images/user.png';
+import image from '../../assets/images/user.png';
 import './index.scss';
 
 class ViewNumbers extends Component {
@@ -10,12 +10,12 @@ class ViewNumbers extends Component {
         <div className="pb-header">
           <Container>
             <Navbar bg="dark" variant="dark">
-              <Navbar.Brand href="#home">Phonebook</Navbar.Brand>
+              <Navbar.Brand href="/">Phonebook</Navbar.Brand>
               <Nav className="ml-auto">
                 <Nav.Link className="pb-user-profile" href="#features">
                   <Image src={image} rounded />
                 </Nav.Link>
-                <Nav.Link className="pb-nav-link text-white" href="#logout">
+                <Nav.Link className="pb-nav-link text-white" href="/login">
                   Logout
                 </Nav.Link>
               </Nav>

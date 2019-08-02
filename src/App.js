@@ -1,10 +1,14 @@
 import React from 'react';
-import ViewNumbers from './containers/viewNumbers'
+import {BrowserRouter} from 'react-router-dom';
+import Routes from './routes';
+
 import './App.css';
 
 function App() {
   return (
-    <ViewNumbers />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 

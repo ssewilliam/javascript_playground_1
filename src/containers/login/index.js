@@ -9,7 +9,7 @@ class Login extends Component {
         <div className="pb-brand">
           <h1 className="pb-title text-center">PB</h1>
         </div>
-        <Form>
+        <Form action="/">
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
