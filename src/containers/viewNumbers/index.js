@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table, Navbar, Container, Nav, Image } from 'react-bootstrap';
+import { Table, Navbar, Container, Nav, Image, Row } from "react-bootstrap";
 import image from '../../assets/images/user.png';
 import './index.scss';
 
@@ -23,6 +23,36 @@ class ViewNumbers extends Component {
           </Container>
         </div>
         <Container>
+          <Row className="pb-mgt-20">
+            <div className="col-sm-3 text-center">
+              <div className="pb-card-stat">
+                <h5>Total Numbers</h5>
+                <h2>9540000</h2>
+                <small>Last down 42 days ago</small>
+              </div>
+            </div>
+            <div className="col-sm-3 text-center">
+              <div className="pb-card-stat">
+                <h5>First Number</h5>
+                <h2>079379205</h2>
+                <small>Last down 42 days ago</small>
+              </div>
+            </div>
+            <div className="col-sm-3 text-center">
+              <div className="pb-card-stat">
+                <h5>Last Number</h5>
+                <h2>079389205</h2>
+                <small>Last down 42 days ago</small>
+              </div>
+            </div>
+            <div className="col-sm-3 text-center">
+              <div className="pb-card-stat">
+                <h5>Active Numbers</h5>
+                <h2>9830</h2>
+                <small>Last down 2 days ago</small>
+              </div>
+            </div>
+          </Row>
           <Table responsive>
             <thead>
               <tr className="text-center">
