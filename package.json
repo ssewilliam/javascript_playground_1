@@ -4,19 +4,24 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
+    "react-csv": "^1.1.1",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "sinon": "^7.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
+    "test:watch": "react-scripts test",
     "eject": "react-scripts eject",
-    "coverage": "CI=true react-scripts test --env=jsdom --coverage"
+    "coverage": "react-scripts test --env=jsdom --coverage  --watchAll=false",
+    "coverage:watch": "react-scripts test --env=jsdom --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,10 +44,14 @@
       "!src/index.js",
       "!src/routes.js",
       "!src/serviceWorker.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ]
   },
   "devDependencies": {
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0"
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0"
   }
 }
